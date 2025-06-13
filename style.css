@@ -82,6 +82,11 @@ section {
   border-radius: 3rem;
 }
 
+.dropbtn:hover {
+  background-color: #1bdd34;
+}
+
+
 .dropbtn i {
   margin-left: 8px;
 }
@@ -107,6 +112,19 @@ section {
 
 .dropdown-content a:hover {
   background-color: #555555;
+}
+
+.cv-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-green);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cv-btn:hover {
+  background-color: #1bdd34;
 }
 
 
@@ -162,6 +180,11 @@ header .begin__typing-animation {
 
 #resum p .meuGithub{
   color: rgb(255, 255, 255);
+
+}
+
+#resum p .meuGithub:hover{
+  color: rgb(224, 224, 224);
 
 }
 

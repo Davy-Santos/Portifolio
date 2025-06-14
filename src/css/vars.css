@@ -1,0 +1,10 @@
+/* ===== Variáveis de Cores e Configurações Globais ===== */
+:root {
+  --primary-green: rgb(115, 255, 0);
+  --background-overlay: rgba(17, 92, 2, 0.2);
+  --section-bg: rgba(99, 189, 26, 0.3);
+  --navbar-bg: rgba(99, 189, 26, 0.6);
+  --font-color: #000;
+  --box-shadow: 2px 12px 12px rgba(45, 73, 0, 1);
+  --border-radius: 2rem;
+}

@@ -4,11 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="./IMG/yggdrasil.jpg">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/vars.css">
+  <link rel="stylesheet" href="./src/css/animation.css">
+  <link rel="stylesheet" href="./src/css/media.css">
+  <link rel="icon" href="./src/IMG/yggdrasil.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!--Icones de https://fontawesome.com/-->
-
   <title>Davy Santos</title>
 </head>
 
@@ -17,13 +20,12 @@
   <!--Barra de navegação-->
   <section class="navbar">
     <a href="#begin" class="home"><i class="fa-solid fa-house-chimney"></i> Início</a>
-    <a href="#resum" class="sobre"><i class="fa-solid fa-book-open"></i> Sobre</a>
+    <a href="#about" class="sobre"><i class="fa-solid fa-book-open"></i> Sobre</a>
     <a href="#techs" class="tecnologias"><i class="fa-solid fa-gears"></i> Tecnologias</a>
     <a href="#projects" class="projetos"><i class="fa-solid fa-folder-open"></i> Projetos</a>
-
     <div class="dropdown">
       <button onclick="toggleDropdown()" class="dropbtn"><i class="fa-solid fa-user"></i> Conecte-se comigo
-        </i></button>
+      </button>
       <div id="dropdownContent" class="dropdown-content">
         <a href="https://github.com/Davy-Santos" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
         <a href="https://www.linkedin.com/in/davy-santos-431792232" target="_blank"><i
@@ -33,12 +35,7 @@
         <a href="http://wa.me/5561993267500" target="_blank"><i class="fa-brands fa-square-whatsapp"></i> WhatsApp</a>
       </div>
     </div>
-    <a href="./docs/DavySantos_CV.pdf" download class="cv-btn">
-      <i class="fa-solid fa-download"></i> Baixar CV
-    </a>
   </section>
-
-
 
   <!--Titulo-->
   <header id="begin">
@@ -46,101 +43,80 @@
     <h2 class="begin__typing-animation">Desenvolvedor Front-End</h2>
   </header>
 
-
   <!--Sobre-->
-  <section id="resum">
-    <h1 class="resum__title"><i class="fa-solid fa-book-open"></i>Sobre</h1>
-
-    <div>
-      <img class="foto" src="./IMG/me(i).jpg" alt="Minha foto" style="border-radius: 10%;">
+  <section id="about">
+    <h1 class="about__title"><i class="fa-solid fa-book-open"></i>Sobre</h1>
+    <div class="about__content">
+      <img class="about__image" src="./src/IMG/me(i).jpg" alt="Minha foto" style="border-radius: 10%;">
       <p>Sou um desenvolvedor front-end em formação, atualmente cursando Análise e Desenvolvimento de Sistemas. Tenho me
         dedicado a construir uma base sólida em tecnologias essenciais como HTML, CSS e JavaScript, além de utilizar Git
         e GitHub para versionamento e colaboração em projetos.
-
         Tenho aplicado meus conhecimentos em diversos projetos práticos, que você pode conferir no meu <a
           href="https://github.com/Davy-Santos" target="_blank" class="meuGithub">GitHub</a>. Essas experiências têm me
         ajudado a aprofundar habilidades importantes como estruturação de código, responsividade e interatividade no
         desenvolvimento de interfaces.
-
         Estou em busca da minha primeira oportunidade como desenvolvedor front-end, onde possa evoluir profissionalmente
         e consolidar minha trajetória na área.
-
         Tenho grande interesse em boas práticas de desenvolvimento, organização de código e na criação de interfaces
         intuitivas e eficientes, sempre buscando escrever código limpo e de qualidade.
-
-
       </p>
+      <a href="./src/docs/DavySantos_CV.pdf" download class="cv-btn">
+        <i class="fa-solid fa-download"></i> Baixar CV
+      </a>
     </div>
-
   </section>
 
 
   <!--Tecnologias-->
   <section id="techs">
     <h1 class="techs__title"><i class="fa-solid fa-gears"></i>Tecnologias</h1>
-
     <div class="tech_icons">
       <div class="icon-row1">
-        <img class="icon" src="./IMG/logoHTML.png" alt="logo HTML5">
-        <img class="icon" src="./IMG/logoCSS.png" alt="logo CSS">
-        <img class="icon" src="./IMG/logoJs.png" alt="logo JavaScript">
+        <img class="icon" src="./src/IMG/logoHTML.png" alt="logo HTML5">
+        <img class="icon" src="./src/IMG/logoCSS.png" alt="logo CSS">
+        <img class="icon" src="./src/IMG/logoJs.png" alt="logo JavaScript">
       </div>
-
       <div class="icon-row2">
-        <img class="icon" src="./IMG/logoGit.png" alt="logo Git">
-        <img class="icon" src="./IMG/logoGithub.png" alt="logo logoGitHub">
+        <img class="icon" src="./src/IMG/logoGit.png" alt="logo Git">
+        <img class="icon" src="./src/IMG/logoGithub.png" alt="logo logoGitHub">
       </div>
     </div>
   </section>
 
   <!--Icones de https://icons8.com/-->
-
-
   <!--Projetos-->
   <section id="projects">
     <h2 class="projects__title"><i class="fa-solid fa-folder-open"></i>Projetos</h2>
     <div class="projects-container">
-      <div class="project-card" style="background-image: url('./IMG/MemoryGame.jpg')">
+      <div class="project-card" style="background-image: url('./src/IMG/MemoryGame.jpg')">
         <a href="https://davy-santos.github.io/Memory-game/" target="_blank">
           <div class="overlay">
             <h2>Jogo da Memória (Memory Game)</h2>
           </div>
         </a>
       </div>
-
-
-      <div class="project-card" style="background-image: url('./IMG/magickaiProjeto.png')">
+      <div class="project-card" style="background-image: url('./src/IMG/magickaiProjeto.png')">
         <a href="https://davy-santos.github.io/Magickai/" target="_blank">
           <div class="overlay">
-            <h3>Magickai</h3>
+            <h2>Magickai</h2>
           </div>
         </a>
       </div>
-
-      <div class="project-card" style="background-image: url('./IMG/spotifyProject.png')">
+      <div class="project-card" style="background-image: url('./src/IMG/spotifyProject.png')">
         <a href="https://davy-santos.github.io/imersao-front-end/" target="_blank">
           <div class="overlay">
-            <h3>Cópia Spotify</h3>
+            <h2>Cópia Spotify</h2>
           </div>
       </div>
       </a>
     </div>
   </section>
-
-
-  <footer class="rodape">@ Davy-Santos</footer>
-
-
-
-
   <button id="backToTop" title="Voltar ao topo">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
+  <footer class="rodape">@ Davy-Santos</footer>
 
-
-  <script src="script.js"></script>
-
-
+  <script src="./src/js/script.js"></script>
 
 </body>
 

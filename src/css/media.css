@@ -1,0 +1,138 @@
+/* Tablets grandes, laptops pequenos */
+@media (max-width: 1024px) {
+  section {
+    width: 90%;
+  }
+
+  .icon {
+    width: 4rem;
+  }
+
+  #projects .projects-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  #projects .projects-container .project-card {
+    width: 20rem;
+    height: 25rem;
+  }
+}
+
+/* Tablets menores e celulares grandes*/
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header h2 {
+    font-size: 1.3rem;
+  }
+
+  #about div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #about p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  #about .about__image {
+    max-width: 90%;
+  }
+
+  #projects .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #projects .projects-container .project-card {
+    width: 18rem;
+    height: 22rem;
+  }
+
+  .icon {
+    width: 3.5rem;
+  }
+
+  .cv-btn {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Celulares menores*/
+@media (max-width: 480px) {
+  .navbar {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  #about .about__title,
+  #techs .techs__title,
+  #projects .projects__title {
+    font-size: 1.2rem;
+    width: auto;
+    padding: 0.5rem 1rem;
+  }
+  
+  #about p {
+    font-size: 0.9rem;
+  }
+
+  #about .about__image {
+    max-width: 100%;
+  }
+
+
+  .icon {
+    width: 3rem;
+  }
+
+  .cv-btn {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+
+  #backToTop {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Telas muito pequenas*/
+@media (max-width: 360px) {
+  .navbar {
+    font-size: 0.8rem;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .cv-btn {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+
+  #projects .projects-container .project-card {
+    height: 18rem;
+  }
+}

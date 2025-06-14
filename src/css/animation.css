@@ -1,0 +1,31 @@
+header .begin__typing-animation {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  background-color: var(--navbar-bg);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+/* ===== Typing Animation ===== */
+.begin__typing-animation {
+  margin-top: 1rem;
+  width: 24ch;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  animation: typing 3s steps(23, end) forwards, blink 0.5s step-end 6;
+  border-right: 2px solid rgb(20, 10, 10);
+  border-bottom: 2px solid rgb(20, 10, 10);
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 25ch;
+  }
+}

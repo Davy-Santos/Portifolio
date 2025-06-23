@@ -81,7 +81,7 @@ body::before {
 }
 
 .dropdown-content a:hover {
-  background-color: #555555;
+    background-color: #1bdd34;
 }
 
 /* ===== Header ===== */
@@ -122,16 +122,17 @@ header h1 {
 
 #about p {
   text-align: justify;
+  hyphens: auto;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
 #about p .meuGithub {
   color: rgb(255, 255, 255);
-
 }
 
 #about p .meuGithub:hover {
+  text-decoration: underline;
   color: rgb(224, 224, 224);
 
 }

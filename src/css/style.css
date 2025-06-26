@@ -117,7 +117,7 @@ header h1 {
   place-items: center;
   height: 100%;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 #about p {
@@ -217,7 +217,7 @@ header h1 {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 #projects .projects-container .project-card {
